@@ -43,15 +43,12 @@ h1 {
 .seccion-titulo {
   font-size: 3rem;
   padding: 15px 0;
-  font-family: "Shadows Into Light", cursive;
+  font-family: "Oswald", sans-serif;
 }
 
-.seccion-descripcion {
-  font-size: 1.2rem;
-  color: #657976;
-}
 
 .seccion-texto {
+  font-family: "Oswald", sans-serif;
   font-size: 1.2rem;
 }
 
@@ -88,7 +85,7 @@ h1 {
 
 .hero-principal h2 {
   font-size: 1.5rem;
-  color: #615151;
+  color: #a02e2e;
 }
 
 /* Sobre mi */
@@ -107,11 +104,15 @@ h1 {
 
 .experiencia {
   padding: 40px 40px 60px 40px;
+  background-color: #F2E7DC;
 }
 
 .experiencia .columna {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+  background-color: white;
   padding: 20px;
-  border: 2px solid #8080804d;
+  border: 2px solid #0000004d;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,16 +121,29 @@ h1 {
 }
 
 .experiencia .columna:hover {
-  color: white;
-  background-color: #1b1b32;
+  color: #ffffff;
+  background-color: #027373;
 }
+
+.experiencia .columna:hover .butto__color {
+    background-color: #ffffff;
+    color: #038C7F;
+    font-weight: normal;
+  }
+
 
 .experiencia i {
   font-size: 2.5rem;
-  color: #7ade30;
-  background-color: #0a0a23;
+  color: #ffffff;
+  background-color: #038C7F;
   padding: 8px 19px;
   border-radius: 50%;
+}
+
+.butto__color {
+  background-color: #038C7F;
+  color: white;
+  font-weight: normal;
 }
 
 .experiencia-titulo {
@@ -150,8 +164,23 @@ h1 {
 
 /* Proyectos */
 
-.proyectos-recientes {
+.proyectos-recientes  {
+  font-size: 4rem;
   padding: 40px;
+  background-color: #F2E7DC;
+}
+.proyectos-recientes h2 {
+  font-size: 4rem;
+  font-family: "Shadows Into Light", cursive;
+  padding: 40px;
+  background-color: #F2E7DC;
+}
+
+.seccion-descripcion {
+  font-family: "Oswald", sans-serif;
+  background-color: #F2E7DC;
+  font-size: 1.2rem;
+  color: #000000;
 }
 
 .proyectos-recientes img {
@@ -179,7 +208,9 @@ h1 {
 }
 
 .overlay p {
-  font-size: 25px;
+  color: #027373;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
   font-weight: bold;
   margin-bottom: 0;
 }
@@ -201,14 +232,28 @@ h1 {
 }
 
 .overlay i {
-  color: black;
+  color: #027373;
   font-size: 60px;
   margin: 10px;
 }
 
+.button__color {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  background-color: #038C7F;
+  color: white;
+  font-weight: normal;
+}
+
+.button__color:hover {
+  background-color: #ffffff;
+  color: #038C7F;
+  font-weight: normal;
+}
+
 
 /* Testimonios */
-
+/* 
 .testimonios {
   padding: 40px 40px 80px 40px;
 }
@@ -259,7 +304,7 @@ h1 {
 .testimonio-info .cargo {
   font-size: 0.9rem;
   color: #656060;
-}
+} */
 
 /* Contacto */
 
@@ -271,9 +316,14 @@ h1 {
 
 .contacto .rectangulo {
   margin-top: -5rem;
-  background-color: rgb(13, 110, 253);
+  background-color: #A9D9D0;
   border-radius: 10px;
-  box-shadow: 0px 1px 4px 1px white;
+  box-shadow: 0px 1px 4px 1px rgb(14, 95, 105);
+}
+
+.contacto .seccion-titulo {
+  font-family: "Oswald", sans-serif;
+  color: #000000;
 }
 
 .contacto .row {
@@ -283,15 +333,16 @@ h1 {
 }
 
 .contacto .descripcion {
-  color: white;
-  font-size: 1.2rem;
+  font-family: "Oswald", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
 }
 
 .contacto button {
-  color: white;
+  background-color: #027373;
+  color: #A9D9D0;
   font-weight: bold;
-  background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid #A9D9D0;
   padding: 1.25em 2em;
   margin: 10px;
   border-radius: 100px;
@@ -299,19 +350,15 @@ h1 {
 }
 
 .contacto button:hover {
-  background-color: white;
-  color: black;
+  opacity: .7;
 }
 
 .contacto button i {
-  color: white;
+  color: #A9D9D0;
   font-size: 1.3rem;
   transition: all 0.2s ease-in-out;
 }
 
-.contacto button:hover i {
-  color: black;
-}
 
 /* Pie de pagina (footer) */
 
@@ -400,3 +447,12 @@ footer {
     max-width: 600px;
   }
 }
+
+
+/* ctrl + J = Terminal
+Paso 1. Git Status
+Paso 2. git add .
+(opcional correr paso 1, debe verse verde) 
+Paso 3. git commit -m "Texto (Cambios realizados)"
+Paso 4. git push origin rama (main)
+*/
