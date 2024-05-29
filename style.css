@@ -373,10 +373,11 @@ footer {
 }
 
 .footer-texto {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   padding: 20px;
   margin-bottom: 30px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Shadows Into Light", cursive;
+  color: #000000;
 }
 
 .iconos-redes-sociales a {
@@ -387,29 +388,36 @@ footer {
   justify-content: center;
   padding: 2px;
   margin: 10px;
-  border: 2px solid white;
+  border: 2px solid #A9D9D0;
   border-radius: 50%;
   transition: all 0.2s ease-in;
 }
 
 .iconos-redes-sociales i {
-  color: white;
+  color: #A9D9D0;
   font-size: 1.5rem;
   transition: all 0.2s ease-in;
 }
 
 .iconos-redes-sociales a:hover {
-  background-color: white;
-  border: 2px solid rgb(13, 110, 253);
+  opacity: 0.7;
+  background-color: #FFFFFF;
 }
 
 .iconos-redes-sociales a:hover i {
-  color: black;
+  color: #027373;
 }
 
 .derechos-de-autor {
+  text-decoration: none;
   font-size: 15px;
-  color: #aeaeae;
+  color: #F2E7DC;
+  padding: 20px;
+}
+
+.derechos-de-autor a {
+  font-size: 15px;
+  color: #F2E7DC;
   padding: 20px;
 }
 
@@ -449,10 +457,14 @@ footer {
 }
 
 
-/* ctrl + J = Terminal
+/* ctrl + J = Terminal 
+Pasos para guardar en GitHub
 Paso 1. Git Status
 Paso 2. git add .
 (opcional correr paso 1, debe verse verde) 
 Paso 3. git commit -m "Texto (Cambios realizados)"
-Paso 4. git push origin rama (main)
+Paso 4. git push origin nombre de la rama (main)
+Paso 5. git fetch
+Paso 6. git pull
+clear=limpiar consola
 */
